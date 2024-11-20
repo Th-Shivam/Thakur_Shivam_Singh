@@ -137,3 +137,11 @@ body {
         opacity: 0.4;
     }
 }
+
+.new{
+    margin-right: 0px;
+    color: black;
+    position: absolute;
+    font:900;
+    font-weight: 800;
+}
