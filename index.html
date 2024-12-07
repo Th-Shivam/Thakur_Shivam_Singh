@@ -9,272 +9,106 @@
     <title>Shivam Singh - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
+<body class="bg-gray-900 text-white font-sans">
     <!-- Navigation -->
-    <header class="w-full bg-transparent backdrop-blur-md z-50 border-b border-gray-800/50">
-        <nav class="container mx-auto p-4">
-            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-                <div class="flex justify-between items-center">
-                    <h1 class="text-xl md:text-2xl font-bold bg-gradient-to-r from-neon-blue to-neon-pink text-transparent bg-clip-text">
-                        Thakur Shivam Singh
-                    </h1>
-                    <!-- Mobile Menu Button -->
-                    <button class="md:hidden text-white" onclick="toggleMenu()">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-                <ul class="hidden md:flex space-x-6 text-lg mt-4 md:mt-0" id="mobile-menu">
-                    <li><a href="#about" class="block py-2 hover:text-neon-blue transition-all duration-300">About</a></li>
-                    <li><a href="#skills" class="block py-2 hover:text-neon-pink transition-all duration-300">Skills</a></li>
-                    <li><a href="#projects" class="block py-2 hover:text-neon-green transition-all duration-300">Projects</a></li>
-                    <li><a href="#contact" class="block py-2 hover:text-neon-yellow transition-all duration-300">Contact</a></li>
-                </ul>
-            </div>
+    <header class="fixed top-0 left-0 w-full bg-gray-800 shadow-md z-50">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Thakur Shivam Singh</h1>
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="#about" class="hover:text-teal-400">About</a></li>
+                <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="min-h-screen relative overflow-hidden">
-        <div id="particles-js" class="absolute inset-0 opacity-50"></div>
-        
-        <div class="relative z-10 flex items-center justify-center min-h-screen px-4">
-            <div class="text-center max-w-4xl" data-aos="fade-up">
-                <!-- Profile Image -->
-                <div class="mb-6 flex justify-center">
-                    <img src="https://github.com/Th-Shivam.png" 
-                         alt="Shivam Singh" 
-                         class="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-neon-blue glow-avatar">
-                </div>
-                
-                <!-- Name with Gradient -->
-                <h1 class="text-4xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-neon-blue via-neon-pink to-neon-green text-transparent bg-clip-text animate-gradient-x">
-                    Thakur Shivam Singh
-                </h1>
-                
-              
-               
-                <!-- Typing Animation -->
-                <div class="typing-container mb-6">
-                    <span class="typing-text text-xl md:text-4xl text-neon-green"></span>
-                    <span class="cursor">|</span>
-                </div>
-                
-                <!-- Location -->
-                <p class="text-lg md:text-2xl text-gray-400 mb-8">
-                    From गोरखपुर to the Digital Universe
-                </p>
-                
-                <!-- Call to Action Buttons -->
-                <div class="flex flex-col md:flex-row justify-center gap-4 mb-12 px-4">
-                    <a href="#contact" 
-                       class="glass-card px-6 md:px-8 py-3 md:py-4 text-neon-blue border border-neon-blue 
-                              hover:bg-neon-blue hover:text-black transition-all duration-300
-                              transform hover:scale-105 text-sm md:text-base">
-                        Get In Touch
-                    </a>
-                    <a href="#projects" 
-                       class="glass-card px-6 md:px-8 py-3 md:py-4 text-neon-pink border border-neon-pink 
-                              hover:bg-neon-pink hover:text-black transition-all duration-300
-                              transform hover:scale-105 text-sm md:text-base">
-                        View Projects
-                    </a>
-                </div>
-                
-                <!-- Social Links -->
-                <div class="flex justify-center gap-6">
-                    <a href="https://github.com/Th-Shivam" target="_blank" 
-                       class="social-icon github">
-                        <i class="fab fa-github text-2xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shivam-singh-352492310" target="_blank" 
-                       class="social-icon linkedin">
-                        <i class="fab fa-linkedin text-2xl"></i>
-                    </a>
-                    <a href="https://twitter.com/dreamyshivam" target="_blank" 
-                       class="social-icon twitter">
-                        <i class="fab fa-twitter text-2xl"></i>
-                    </a>
-                    <a href="https://instagram.com/dreamyshivam" target="_blank" 
-                       class="social-icon instagram">
-                        <i class="fab fa-instagram text-2xl"></i>
-                    </a>
-                </div>
-            </div>
+    <section id="hero"
+        class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700">
+        <div class="text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-teal-400 text-">Thakur Shivam
+                    Singh</span></h2>
+            <p class="text-lg md:text-2xl text-gray-400 mb-6">Aspiring Software Development Engineer</p>
+            <p class="text-lg md:text-xl text-gray-400 mb-6">From - गोरखपुर 🚩</p>
+            <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg text-lg">Contact
+                Me</a>
         </div>
     </section>
 
 
     <!-- About Section -->
-    <section id="about" class="min-h-screen py-20 md:py-32 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
-        <!-- Add these animated background elements -->
-        <div class="absolute inset-0 z-0">
-            <!-- Matrix-like rain effect -->
-            <div class="matrix-rain"></div>
-            
-            <!-- Glowing orbs -->
-            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-blue opacity-10 rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-neon-pink opacity-10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            
-            <!-- Floating code snippets -->
-            <div class="absolute top-10 left-10 text-neon-green opacity-20 text-sm font-mono animate-float">
-                {code: 'infinite'}
-            </div>
-            <div class="absolute bottom-10 right-10 text-neon-pink opacity-20 text-sm font-mono animate-float-delay">
-                while(true) { learn(); }
-            </div>
-        </div>
-
-        <!-- Grid lines overlay -->
-        <div class="absolute inset-0 z-0 grid-overlay"></div>
-
-        <!-- Content with increased z-index -->
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-20 mt-16 md:mt-0 relative z-10">
+    <section id="about" class="h-screen flex items-center justify-center bg-gray-900">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-10 md:px-20">
             <!-- About Me -->
             <div class="flex flex-col justify-center space-y-6">
-                <!-- Terminal-like Header -->
-                <div class="glass-card p-3 border border-neon-pink rounded-t-lg">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        <span class="ml-2 text-sm text-gray-400">shivam@portfolio:~</span>
-                    </div>
-                </div>
-
-                <!-- Code Editor Style About -->
-                <div class="glass-card p-6 border border-neon-blue rounded-lg transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-center mb-4">
-                        <span class="text-neon-pink"># Initialize Developer Profile</span>
-                    </div>
-                    <p class="text-base md:text-lg text-gray-300 leading-relaxed font-mono">
-                        <span class="text-neon-pink">const</span> <span class="text-neon-blue">developer</span> = {<br>
-                        &nbsp;&nbsp;<span class="text-gray-400">// Personal Info</span><br>
-                        &nbsp;&nbsp;name: <span class="text-neon-green">"Shivam Singh"</span>,<br>
-                        &nbsp;&nbsp;title: <span class="text-neon-green">"Full Stack Developer"</span>,<br>
-                        &nbsp;&nbsp;location: <span class="text-neon-green">"Gorakhpur, India"</span>,<br>
-                        &nbsp;&nbsp;status: <span class="text-neon-green">"Building the future, one line at a time"</span><br>
-                        };
-                    </p>
-                </div>
-
-                <!-- Skills Terminal -->
-                <div class="glass-card p-6 border border-neon-green rounded-lg transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-center mb-4">
-                        <span class="text-neon-green">$ ./display-skills.sh</span>
-                    </div>
-                    <div class="space-y-3 font-mono">
-                        <div class="flex items-center">
-                            <span class="text-neon-pink">▹</span>
-                            <span class="ml-2">
-                                <span class="text-neon-blue">Programming:</span>
-                                <span class="text-gray-300">[ Python, JavaScript, HTML/CSS ]</span>
-                            </span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="text-neon-pink">▹</span>
-                            <span class="ml-2">
-                                <span class="text-neon-blue">Security:</span>
-                                <span class="text-gray-300">[ Metasploit, Burpsuite, Ethical Hacking ]</span>
-                            </span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="text-neon-pink">▹</span>
-                            <span class="ml-2">
-                                <span class="text-neon-blue">Tools:</span>
-                                <span class="text-gray-300">[ Git, VS Code, Linux ]</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Current Focus -->
-                <div class="glass-card p-6 border border-neon-yellow rounded-lg transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-center mb-4">
-                        <span class="text-neon-yellow">$ cat current-focus.log</span>
-                    </div>
-                    <div class="space-y-3 font-mono">
-                        <div class="flex items-center">
-                            <span class="text-neon-blue">→</span>
-                            <span class="ml-2 text-gray-300">Mastering Full Stack Development</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="text-neon-blue">→</span>
-                            <span class="ml-2 text-gray-300">Exploring Advanced Cybersecurity</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="text-neon-blue">→</span>
-                            <span class="ml-2 text-gray-300">Building Innovative Web Solutions</span>
-                        </div>
-                    </div>
-                    <div class="mt-4 text-gray-400 text-sm">
-                        <span class="text-neon-pink">while</span> (alive) {<br>
-                        &nbsp;&nbsp;code();<br>
-                        &nbsp;&nbsp;learn();<br>
-                        &nbsp;&nbsp;grow();<br>
-                        }
-                    </div>
-                </div>
+                <h3 class="text-4xl font-extrabold text-teal-400">About Me</h3>
+                <p class="text-lg text-gray-300 leading-loose">
+                    ✨ Hey there! I’m <strong class="text-teal-400">Shivam Singh</strong>.
+                    A passionate dreamer, an engineering mind, and a creative soul blending the world of code and
+                    innovation.
+                    From coding intricate algorithms to designing sleek user interfaces, I thrive on turning ideas into
+                    reality.
+                </p>
+                <p class="text-lg text-gray-300 leading-loose">
+                    🎯 <strong class="text-teal-400">What fuels me?</strong>
+                <ul class="list-disc ml-6">
+                    <li>Breaking challenges into simple, elegant solutions.</li>
+                    <li>Crafting digital experiences that leave a lasting impact.</li>
+                    <li>Constantly learning, because the future is always one skill away.</li>
+                </ul>
+                </p>
+                <p class="text-lg text-gray-300 leading-loose">
+                    💡 <strong class="text-teal-400">Fun Facts:</strong>
+                <ul class="list-disc ml-6">
+                    <li>I can brainstorm tech ideas while vibing to a Bhojpuri remix (yes, dual-core processing 🤓).
+                    </li>
+                    <li>Obsessed with making things faster, smoother, and cooler—be it apps or my CSS skills.</li>
+                    <li>Always up for a tech debate or exploring ways to simplify complex concepts.</li>
+                </ul>
+                </p>
+                <p class="text-lg text-teal-400">🌟 Let’s connect, create, and grow together in this ever-evolving tech
+                    universe. 🚀</p>
             </div>
 
-            <!-- Education & Certifications Column -->
-            <div class="flex flex-col justify-center space-y-6">
-                <!-- Education Terminal -->
-                <div class="glass-card p-6 border border-neon-blue rounded-lg transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-center mb-4">
-                        <span class="text-neon-blue">$ cat education.json</span>
-                    </div>
-                    <div class="space-y-4 font-mono">
-                        <div class="p-4 bg-gray-800/50 rounded-lg">
-                            <h4 class="text-neon-blue font-bold">VIT Bhopal University</h4>
-                            <p class="text-gray-300">B.Tech in Computer Science Engineering</p>
-                            <p class="text-neon-green">2024 - 2028</p>
-                        </div>
-                        <div class="p-4 bg-gray-800/50 rounded-lg">
-                            <h4 class="text-neon-blue font-bold">Inter School</h4>
-                            <p class="text-gray-300">Class XII (PCM Stream)</p>
-                            <p class="text-neon-green">2024 - Jodhpur</p>
-                        </div>
-                        <div class="p-4 bg-gray-800/50 rounded-lg">
-                            <h4 class="text-neon-blue font-bold">High School</h4>
-                            <p class="text-gray-300">Class X (PCM Stream)</p>
-                            <p class="text-neon-green">2022 - Gorakhpur</p>
-                        </div>
-                    </div>
+            <!-- Education & Certifications -->
+            <div class="flex flex-col justify-center space-y-8">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-4xl font-extrabold text-teal-400 mb-4">Education</h3>
+                    <ul class="text-lg text-gray-300 space-y-6">
+                        <li>
+                            <strong class="text-white">VIT Bhopal University</strong><br>
+                            <span>B.Tech in Computer Science Engineering</span><br>
+                            <span class="text-gray-500">2024 - 2028</span>
+                        </li>
+                        <li>
+                            <strong class="text-white">Inter School</strong><br>
+                            <span>Class XII (PCM Stream)</span><br>
+                            <span class="text-gray-500">2024 - Jodhpur</span>
+                        </li>
+                        <li>
+                            <strong class="text-white">High School</strong><br>
+                            <span>Class X (PCM Stream)</span><br>
+                            <span class="text-gray-500">2022 - Gorakhpur</span>
+                        </li>
+
+
+                    </ul>
                 </div>
 
-                <!-- Certifications Terminal -->
-                <div class="glass-card p-6 border border-neon-pink rounded-lg transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-center mb-4">
-                        <span class="text-neon-pink">$ ls certifications/</span>
-                    </div>
-                    <div class="space-y-3 font-mono">
-                        <div class="flex items-center p-3 bg-gray-800/50 rounded-lg">
-                            <span class="text-neon-yellow">📜</span>
-                            <span class="ml-2">
-                                <a href="Certificates/Infosys-Python.pdf" class="text-neon-blue hover:underline">Python_Fundamentals.cert</a>
-                                <span class="text-gray-500 text-sm ml-2">- Infosys</span>
-                            </span>
-                        </div>
-                        <div class="flex items-center p-3 bg-gray-800/50 rounded-lg">
-                            <span class="text-neon-yellow">📜</span>
-                            <span class="ml-2">
-                                <a href="Certificates/Infosys-advanced-html.pdf" class="text-neon-blue hover:underline">Advanced_HTML.cert</a>
-                                <span class="text-gray-500 text-sm ml-2">- Infosys</span>
-                            </span>
-                        </div>
-                        <div class="flex items-center p-3 bg-gray-800/50 rounded-lg">
-                            <span class="text-neon-yellow">📜</span>
-                            <span class="ml-2">
-                               <a href="Certificates/MATLAB_Onramp_course_certificate.pdf" class="text-neon-blue hover:underline">MATLAB_Onramp.cert</a>
-                                <span class="text-gray-500 text-sm ml-2">- Mathworks</span>
-                            </span>
-                        </div>
-                    </div>
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-4xl font-extrabold text-teal-400 mb-4">Certifications</h3>
+                    <ul class="text-lg text-gray-300 space-y-6">
+                        <li><a href="Certificates/Infosys-Python.pdf">Python Fundamentals - </a><span class="text-gray-500">Infosys</span></li>
+                        <li><a href="Certificates/Infosys-advanced-html.pdf">Advanced HTML -  </a><span class="text-gray-500">Infosys</span></li>
+                        <li><a href="Certificates/MATLAB_Onramp_course_certificate.pdf">MATLAB Onramp - </a><span class="text-gray-500">Mathworks</span></li>
+                        
+                        
+                    </ul>
                 </div>
             </div>
         </div>
@@ -282,197 +116,40 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="min-h-screen py-20 md:py-32 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
-        <!-- Add these animated background elements -->
-        <div class="absolute inset-0 z-0">
-            <!-- Matrix-like rain effect -->
-            <div class="matrix-rain"></div>
-            
-            <!-- Glowing orbs -->
-            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-blue opacity-10 rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-neon-pink opacity-10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            
-            <!-- Floating code snippets -->
-            <div class="absolute top-10 left-10 text-neon-green opacity-20 text-sm font-mono animate-float">
-                {skills: 'mastering'}
-            </div>
-            <div class="absolute bottom-10 right-10 text-neon-pink opacity-20 text-sm font-mono animate-float-delay">
-                function learn() { return 'always'; }
-            </div>
-        </div>
-
-        <!-- Grid lines overlay -->
-        <div class="absolute inset-0 z-0 grid-overlay"></div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <!-- Section Header -->
-            <div class="text-center mb-16">
-                <!-- Main Heading with White Color - No Animation -->
-                <div class="relative inline-block">
-                    <h3 class="text-6xl md:text-7xl font-black mb-4 relative z-10 text-white">
-                        &lt;Skills/&gt;
-                    </h3>
+    <section id="skills" class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="container mx-auto text-center">
+            <h3 class="text-5xl font-extrabold mb-8 text-neon-green">Skills</h3>
+            <h2 class="text-2xl font-extrabold mb-8 text-neon-white"> "सर्वं ज्ञानं मयि सन्निधौ"</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div
+                    class="p-8 bg-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-neon-blue">
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-blue">Programming</h4>
+                    <p class="text-gray-300">Python, JavaScript</p>
                 </div>
-                
-                <!-- Decorative Line - Static -->
-                <div class="w-48 h-1 mx-auto my-6 bg-white/50"></div>
-
-                <!-- Sanskrit Text - Simple White -->
-                <h2 class="text-2xl md:text-3xl font-bold mt-4 text-white/80">
-                    "सर्वं ज्ञान मयि सन्निधौ"
-                </h2>
-            </div>
-
-            <!-- Skills Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Programming Skills -->
-                <div class="skill-terminal glass-card">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-blue/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-blue font-mono text-sm">programming.sh</span>
-                    </div>
-                    <div class="p-6 font-mono">
-                        <p class="text-neon-green mb-2">$ ls programming-skills/</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">Python <span class="text-neon-pink">[90%]</span></span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">JavaScript <span class="text-neon-pink">[85%]</span></span>
-                            </li>
-                        </ul>
-                    </div>
+                <div
+                    class="p-8 bg-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-neon-pink">
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-pink">Web Development</h4>
+                    <p class="text-gray-300">HTML, CSS, Tailwind CSS</p>
                 </div>
-
-                <!-- Web Development -->
-                <div class="skill-terminal glass-card">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-pink/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-pink font-mono text-sm">web-dev.sh</span>
-                    </div>
-                    <div class="p-6 font-mono">
-                        <p class="text-neon-pink mb-2">$ ls web-skills/</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">HTML5/CSS3 <span class="text-neon-green">[95%]</span></span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">Tailwind CSS <span class="text-neon-green">[90%]</span></span>
-                            </li>
-                        </ul>
-                    </div>
+                <div
+                    class="p-8 bg-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-neon-yellow">
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-yellow">Problem Solving</h4>
+                    <p class="text-gray-300">Algorithms, Space Complexity</p>
                 </div>
-
-                <!-- Cybersecurity -->
-                <div class="skill-terminal glass-card">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-green/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-green font-mono text-sm">security.sh</span>
-                    </div>
-                    <div class="p-6 font-mono">
-                        <p class="text-neon-yellow mb-2">$ ls security-tools/</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">Metasploit <span class="text-neon-yellow">[88%]</span></span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">Burpsuite <span class="text-neon-yellow">[85%]</span></span>
-                            </li>
-                        </ul>
-                    </div>
+                <div
+                    class="p-8 bg-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-neon-yellow">
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-blue">Cyber Security</h4>
+                    <p class="text-gray-300">Metasploit , DDoS , Burpsuite , Phishing </p>
                 </div>
-
-                <!-- Version Control -->
-                <div class="skill-terminal glass-card">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-yellow/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-yellow font-mono text-sm">version-control.sh</span>
-                    </div>
-                    <div class="p-6 font-mono">
-                        <p class="text-neon-blue mb-2">$ git status</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <span class="text-neon-pink">▹</span>
-                                <span class="ml-2">Git <span class="text-neon-blue">[92%]</span></span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-neon-pink">▹</span>
-                                <span class="ml-2">GitHub <span class="text-neon-blue">[90%]</span></span>
-                            </li>
-                        </ul>
-                    </div>
+                <div
+                    class="p-8 bg-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-neon-yellow">
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-pink">Version Control</h4>
+                    <p class="text-gray-300">Git, Github</p>
                 </div>
-
-                <!-- Problem Solving -->
-                <div class="skill-terminal glass-card">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-pink/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-pink font-mono text-sm">algorithms.sh</span>
-                    </div>
-                    <div class="p-6 font-mono">
-                        <p class="text-neon-green mb-2">$ ./check-skills</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <span class="text-neon-yellow">▹</span>
-                                <span class="ml-2">DSA <span class="text-neon-green">[85%]</span></span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-neon-yellow">▹</span>
-                                <span class="ml-2">Problem Solving <span class="text-neon-green">[88%]</span></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Soft Skills -->
-                <div class="skill-terminal glass-card">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-green/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-green font-mono text-sm">soft-skills.sh</span>
-                    </div>
-                    <div class="p-6 font-mono">
-                        <p class="text-neon-pink mb-2">$ cat abilities.txt</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">Team Collaboration</span>
-                            </li>
-                            <li class="flex items-center">
-                                <span class="text-neon-blue">▹</span>
-                                <span class="ml-2">Problem Solving</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div
+                    class="p-8 bg-gray-700 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-neon-yellow">
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-yellow">Soft Skills</h4>
+                    <p class="text-gray-300">Team Collaboration , Time Management , Public Speaking , Adaptability</p>
                 </div>
             </div>
         </div>
@@ -484,151 +161,84 @@
 
 
     <!-- Projects Section -->
-    <section id="projects" class="min-h-screen py-20 md:py-32 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
-        <!-- Background Effects -->
-        <div class="absolute inset-0 z-0">
-            <!-- Matrix-like rain effect -->
-            <div class="matrix-rain"></div>
-            
-            <!-- Glowing orbs -->
-            <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-neon-blue opacity-10 rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-1/4 left-1/4 w-64 h-64 bg-neon-pink opacity-10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            
-            <!-- Grid lines overlay -->
-            <div class="absolute inset-0 z-0 grid-overlay"></div>
-        </div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <!-- Section Header -->
-            <div class="text-center mb-16">
-                <div class="relative inline-block">
-                    <h3 class="text-6xl md:text-7xl font-black mb-4 relative z-10 text-white">
-                        &lt;Projects/&gt;
-                    </h3>
-                </div>
-                <div class="w-48 h-1 mx-auto my-6 bg-white/50"></div>
-                <p class="text-neon-blue text-lg md:text-xl font-mono">
-                    $ ls ./my-projects/* | grep "latest"
-                </p>
+    <section id="projects"
+        class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-black relative">
+        <div class="container mx-auto text-center px-8">
+            <!-- Title with Decorative Line -->
+            <div class="mb-16">
+                <h3 class="text-6xl font-extrabold text- tracking-widest mb-4">Projects</h3>
+                <div class="w-24 h-1 bg-saffron mx-auto animate-bounce"></div>
             </div>
 
             <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 - Web Clock -->
-                <div class="glass-card border border-neon-blue rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-blue/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-blue font-mono text-sm">web-clock.js</span>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <span class="text-neon-green font-mono text-sm">// NEW</span>
-                        </div>
-                        <h4 class="text-2xl font-bold text-neon-blue mb-3">Web Clock</h4>
-                        <p class="text-gray-300 mb-4 font-mono text-sm">
-                            A visually engaging web-based clock application with modern UI.
-                        </p>
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-pink text-xs font-mono">HTML5</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-blue text-xs font-mono">CSS3</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-yellow text-xs font-mono">JavaScript</span>
-                        </div>
-                        <a href="https://th-shivam.github.io/Web-Clock/" 
-                           class="inline-flex items-center text-neon-green hover:text-neon-blue transition-colors font-mono text-sm">
-                            <span>view-project</span>
-                            <span class="ml-2">→</span>
-                        </a>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+                 <!-- Project Card 1 -->
+                 <div
+                 class="p-8 bg-gradient-to-b from-gray-800 via-gray-700 to-gray-800 rounded-3xl shadow-xl transition-all duration-300 project-card">
+                 <div class="new"><p>NEW</p></div>
+               
+                 <h4 class="text-3xl font-semibold mb-4 text-neon-green">Web-Clock</h4>
+                 <p class="text-gray-300 mb-6 leading-relaxed">
+                     A visually engaging Web-clock .
+                 </p>
+                 <a href="https://th-shivam.github.io/Web-Clock/"
+                     class="text-saffron font-bold uppercase tracking-wide hover:text-yellow-400 transition duration-200">
+                     View Project
+                 </a>
+             </div>
+                <!-- Project Card 2 -->
+                <div
+                    class="p-8 bg-gradient-to-b from-gray-800 via-gray-700 to-gray-800 rounded-3xl shadow-xl transition-all duration-300 relative project-card">
+                   
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-green">Amazon Frontend Clone</h4>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                    Cloned the amazon indian website 
+(not functional)
+                    </p>
+                    <a href="https://amazonclonebalua.tiiny.site/"
+                        class="text-saffron font-bold uppercase tracking-wide hover:text-yellow-400 transition duration-200">
+                        View Project
+                    </a>
                 </div>
 
-                <!-- Project Card 2 - Amazon Clone -->
-                <div class="glass-card border border-neon-pink rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-pink/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-pink font-mono text-sm">amazon-clone.jsx</span>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="text-2xl font-bold text-neon-pink mb-3">Amazon Frontend Clone</h4>
-                        <p class="text-gray-300 mb-4 font-mono text-sm">
-                            A pixel-perfect clone of Amazon's Indian website interface.
-                        </p>
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-blue text-xs font-mono">React.js</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-green text-xs font-mono">Tailwind</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-yellow text-xs font-mono">JavaScript</span>
-                        </div>
-                        <a href="https://amazonclonebalua.tiiny.site/" 
-                           class="inline-flex items-center text-neon-pink hover:text-neon-blue transition-colors font-mono text-sm">
-                            <span>view-project</span>
-                            <span class="ml-2">→</span>
-                        </a>
-                    </div>
+                <!-- Project Card 3 -->
+                <div
+                    class="p-8 bg-gradient-to-b from-gray-800 via-gray-700 to-gray-800 rounded-3xl shadow-xl transition-all duration-300 project-card">
+                    
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-green">CSS-Neon-Loader</h4>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        A visually engaging CSS-based animated loader .
+                    </p>
+                    <a href="https://github.com/Th-Shivam/CSS-NEON-LOADER"
+                        class="text-saffron font-bold uppercase tracking-wide hover:text-yellow-400 transition duration-200">
+                        View Project
+                    </a>
                 </div>
 
-                <!-- Project Card 3 - CSS Loader -->
-                <div class="glass-card border border-neon-green rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-green/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-green font-mono text-sm">neon-loader.css</span>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="text-2xl font-bold text-neon-green mb-3">CSS Neon Loader</h4>
-                        <p class="text-gray-300 mb-4 font-mono text-sm">
-                            A visually stunning CSS-based animated loader with neon effects.
-                        </p>
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-blue text-xs font-mono">HTML5</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-pink text-xs font-mono">CSS3</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-yellow text-xs font-mono">Animation</span>
-                        </div>
-                        <a href="https://github.com/Th-Shivam/CSS-NEON-LOADER" 
-                           class="inline-flex items-center text-neon-green hover:text-neon-blue transition-colors font-mono text-sm">
-                            <span>view-project</span>
-                            <span class="ml-2">→</span>
-                        </a>
-                    </div>
+                <!-- Project Card  -->
+                <div
+                    class="p-8 bg-gradient-to-b from-gray-800 via-gray-700 to-gray-800 rounded-3xl shadow-xl transition-all duration-300 project-card">
+                    
+                    <h4 class="text-3xl font-semibold mb-4 text-neon-green"> Multiple Python Programs </h4>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Designed multiple programs to start the journey towards python .
+                    </p>
+                    <a href="https://github.com/Th-Shivam/WAY-TO-PYTHON/tree/master/WAY-TO-PYTHON"
+                        class="text-saffron font-bold uppercase tracking-wide hover:text-yellow-400 transition duration-200">
+                        View Project
+                    </a>
                 </div>
-
-                <!-- Project Card 4 - Python Programs -->
-                <div class="glass-card border border-neon-yellow rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="terminal-header flex items-center p-3 border-b border-neon-yellow/20">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="ml-4 text-neon-yellow font-mono text-sm">python-journey.py</span>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="text-2xl font-bold text-neon-yellow mb-3">Python Programs</h4>
-                        <p class="text-gray-300 mb-4 font-mono text-sm">
-                            Collection of Python programs showcasing various programming concepts.
-                        </p>
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-blue text-xs font-mono">Python</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-pink text-xs font-mono">Algorithms</span>
-                            <span class="px-2 py-1 bg-gray-800/50 rounded text-neon-green text-xs font-mono">Data Structures</span>
-                        </div>
-                        <a href="https://github.com/Th-Shivam/WAY-TO-PYTHON/tree/master/WAY-TO-PYTHON" 
-                           class="inline-flex items-center text-neon-yellow hover:text-neon-blue transition-colors font-mono text-sm">
-                            <span>view-project</span>
-                            <span class="ml-2">→</span>
-                        </a>
-                    </div>
-                </div>
+               
             </div>
+        </div>
+
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black to-black opacity-70 z-0"></div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute -top-10 -left-10 w-32 h-32 bg-saffron opacity-20 rounded-full blur-3xl animate-pulse">
+        </div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-neon-green opacity-20 rounded-full blur-3xl animate-pulse">
         </div>
     </section>
 
@@ -636,103 +246,50 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="min-h-screen py-20 md:py-32 flex items-center justify-center relative overflow-hidden">
-        <!-- Unique tech background -->
-        <div class="absolute inset-0 bg-[#0a192f]">
-            <!-- Circuit lines animation -->
-            <div class="circuit-lines"></div>
-            
-            <!-- Binary rain effect -->
-            <div class="binary-rain"></div>
-        </div>
-
-        <div class="container mx-auto z-10 px-4 md:px-6 relative">
-            <!-- Terminal-style contact card -->
-            <div class="glass-card border border-neon-blue rounded-lg max-w-3xl mx-auto">
-                <!-- Terminal header -->
-                <div class="terminal-header flex items-center p-3 border-b border-neon-blue/20">
-                    <div class="flex space-x-2">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                    </div>
-                    <span class="ml-4 text-neon-blue font-mono text-sm">contact.sh</span>
+    <section id="contact" class="h-screen flex items-center justify-center bg-gray-900 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 opacity-90"></div>
+        <div class="container mx-auto z-10 text-center text-white px-6">
+            <h3 class="text-4xl font-bold mb-8 text-teal-400">Contact Me</h3>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                I’d love to hear from you! Whether it’s a project, a job opportunity, or just a chat, my inbox is always
+                open.
+            </p>
+            <div class="space-y-6">
+                <!-- Email -->
+                <div>
+                    <a href="mailto:dreamyshivam01@gmail.com"
+                        class="text-2xl text-teal-400 font-semibold hover:underline transition-all">
+                        <i class="fas fa-envelope text-xl mr-2"></i> dreamyshivam01@gmail.com
+                    </a>
                 </div>
+                <!-- Phone -->
+                <div>
+                    <a href="tel:+917014930330"
+                        class="text-2xl text-teal-400 font-semibold hover:underline transition-all">
+                        <i class="fas fa-phone-alt text-xl mr-2"></i> +91-7014930330
+                    </a>
+                    <p><pre>
 
-                <!-- Terminal content -->
-                <div class="p-8 font-mono">
-                    <div class="text-center mb-8">
-                        <h3 class="text-4xl md:text-5xl font-bold mb-4">
-                            <span class="text-neon-blue">&lt;</span>
-                            <span class="text-white">Connect With Me</span>
-                            <span class="text-neon-blue">/&gt;</span>
-                        </h3>
-                        <p class="text-gray-400 text-sm">
-                            <span class="text-neon-pink">const</span> <span class="text-neon-green">connection</span> = <span class="text-neon-blue">await</span> establish_connection();
-                        </p>
-                    </div>
 
-                    <!-- Contact Methods -->
-                    <div class="space-y-6 mb-8">
-                        <!-- Email -->
-                        <div class="glass-card p-4 border border-neon-pink/30 rounded-lg hover:border-neon-pink transition-all">
-                            <p class="text-neon-pink mb-2">$ echo $EMAIL</p>
-                            <a href="mailto:dreamyshivam01@gmail.com" 
-                               class="flex items-center text-white hover:text-neon-blue transition-all group">
-                                <i class="fas fa-envelope mr-3 text-neon-pink group-hover:text-neon-blue"></i>
-                                <span class="font-mono">dreamyshivam01@gmail.com</span>
-                            </a>
-                        </div>
-
-                        <!-- Phone -->
-                        <div class="glass-card p-4 border border-neon-green/30 rounded-lg hover:border-neon-green transition-all">
-                            <p class="text-neon-green mb-2">$ echo $PHONE</p>
-                            <a href="tel:+917014930330" 
-                               class="flex items-center text-white hover:text-neon-blue transition-all group">
-                                <i class="fas fa-phone-alt mr-3 text-neon-green group-hover:text-neon-blue"></i>
-                                <span class="font-mono">+91-7014930330</span>
-                            </a>
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="glass-card p-4 border border-neon-blue/30 rounded-lg hover:border-neon-blue transition-all">
-                            <p class="text-neon-blue mb-4">$ ls social-links/</p>
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <a href="https://github.com/Th-Shivam" target="_blank" 
-                                   class="flex items-center justify-center p-3 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all group">
-                                    <i class="fab fa-github text-2xl text-white group-hover:text-neon-blue"></i>
-                                    <span class="ml-2 text-sm">GitHub</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/shivam-singh-352492310" target="_blank"
-                                   class="flex items-center justify-center p-3 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all group">
-                                    <i class="fab fa-linkedin text-2xl text-white group-hover:text-neon-blue"></i>
-                                    <span class="ml-2 text-sm">LinkedIn</span>
-                                </a>
-                                <a href="https://twitter.com/dreamyshivam" target="_blank"
-                                   class="flex items-center justify-center p-3 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all group">
-                                    <i class="fab fa-twitter text-2xl text-white group-hover:text-neon-blue"></i>
-                                    <span class="ml-2 text-sm">Twitter</span>
-                                </a>
-                                <a href="https://instagram.com/dreamyshivam" target="_blank"
-                                   class="flex items-center justify-center p-3 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all group">
-                                    <i class="fab fa-instagram text-2xl text-white group-hover:text-neon-blue"></i>
-                                    <span class="ml-2 text-sm">Instagram</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer Message -->
-                    <div class="text-center mt-8">
-                        <p class="text-neon-yellow mb-2">$ echo "जय भवानी 🚩"</p>
-                        <div class="typing-effect text-gray-400">
-                            <span class="text-neon-green">while</span> (true) {<br>
-                            &nbsp;&nbsp;await messages.receive();<br>
-                            &nbsp;&nbsp;return response.quick();<br>
-                            }
-                        </div>
-                    </div>
+जय भवानी 🚩
+                    </pre></p>
                 </div>
+            </div>
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-6 mt-12">
+                <a href="https://github.com/Th-Shivam" target="_blank" class="text-gray-400 hover:text-teal-400">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shivam-singh-352492310" target="_blank"
+                    class="text-gray-400 hover:text-teal-400">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <a href="https://twitter.com/dreamyshivam" target="_blank" class="text-gray-400 hover:text-teal-400">
+                    <i class="fab fa-twitter text-3xl"></i>
+                    <a href="https://instagram.com/dreamyshivam" target="_blank" class="text-gray-400 hover:text-teal-400">
+                        <i class="fab fa-instagram text-3xl"></i>
+                    </a>
+                </a>
             </div>
         </div>
     </section>
@@ -744,23 +301,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-    function toggleMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-        menu.classList.toggle('flex');
-        menu.classList.toggle('flex-col');
-    }
-
-    // Close menu when clicking a link
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.add('hidden');
-            menu.classList.remove('flex', 'flex-col');
-        });
-    });
-    </script>
 </body>
 
 </html>
