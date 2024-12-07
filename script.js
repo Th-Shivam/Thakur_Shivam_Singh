@@ -6,6 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });
+HEAD
   
 
     // Typing animation for hero section
@@ -149,3 +150,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             mirror: false
         });
     });
+
+
+  
